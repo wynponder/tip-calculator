@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <style></style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="tip-calculator.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="tip-widget">
+        <h1> Tip Calculator </h1>
+        <form id="calculation">
+            <!--Field 1: Meal Subtotal-->
+            <div class="value-fields">
+                <label for="subtotal">Subtotal of Meal:</label>
+                <input id="subtotal" type="number" name="subtotal" placeholder="Meal Subtotal">
+                <!--step.01-->
+            </div>
+            <!--Field 2: Tip percentage dropdown-->
+            <div class="value-fields">
+                <label for="service">Quality of Service:</label>
+                <select id="service" name="service">
+                    <option value="1" disabled selected>Select Option from List</option>
+                    <option value="0.25">Exellent - 25%</option>
+                    <option value="0.20">Great - 20%</option>
+                    <option value="0.18">Pretty Good - 18%</option>
+                    <option value="0.15">Fine - 15%</option>
+                    <option value="0.12">Just OK - 12%</option>
+                    <option value="0.10">Bad - 10%</option>
+                </select>
+            </div>
+            <!--Field 3: Total amount of people to split between-->
+            <div class="value-fields">
+                <label for="total-people"> Number of People:</label>
+                <input id="total-people" type="number" name="total-people" placeholder="Total Number of People">
+            </div>
+            <div class="value-fields">
+                <button id="button" type="button" onclick="tipAmount(); totalAmount(); totalPerPerson();">Calculate Tip</button>
+            </div>
+        </form>
+        <h2> Total Tip: $
+            <span id="tip-total"></span>
+        </h2>
+        <h2> Total Cost Including Tip: $
+            <span id="total-cost"></span>
+        </h2>
+        <h2> Total Cost Per Person: $
+            <span id="total-pp"></span>
+        </h2>
+    </div>
+    <!-- <script src ="tip-calculator.js"></script> -->
+    <script src="tip-calculator.js"></script>
+</body>
+
+</html>

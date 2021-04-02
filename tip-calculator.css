@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(189, 189, 189);
+}
+
+.tip-widget {
+    position:fixed;
+    top:50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    display:flex;
+    align-content: left;
+    flex-direction: column;
+    border: 15px double navy;
+    background: rgb(187,245,252);
+    font-family: 'Oswald', sans-serif;
+    height: 600px;
+    width: 600px;
+}
+
+form {
+    display: flex;
+    align-content: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+input{
+    width:175px;
+    font-size:14px;
+}
+
+.value-fields {
+    padding-bottom: 25px;
+    margin-left:25px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight:500;
+    margin-left:15px;
+}
+
+h2{
+    font-size:24px;
+    font-weight: 300;
+    margin-left:15px;
+}
+
+button{
+    font-size: 16px;
+    height:35px;
+    width:115px;
+    background-color: navy;
+    color: white;
+    border: 0.5px solid white; 
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 2.5px 2.5px 4px rgb(111,115,116);
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+span {
+    background: navy;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    text-decoration-style: dashed;
+}
